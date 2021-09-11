@@ -1,0 +1,68 @@
+@import '../../common/styles/sass/mixins.scss';
+@import '../../common/styles/sass/variables.scss';
+
+.project {
+  width: 100%;
+  margin: 15px 0;
+  display: inline-block;
+
+  .imgBlock {
+    height: 250px;
+    background-color: #fcf9f9;
+    @include flexable(center, center, column);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .overlay {
+      @include flexable(center, center, column);
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.75);
+      opacity: 0;
+      -webkit-transition: opacity .25s ease-in-out;
+      -o-transition: opacity .25s ease-in-out;
+      transition: opacity .25s ease-in-out;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      .descriptionBlock {
+        padding: 15px;
+
+        h3 {
+          @include text($textColorPAndBtn, 24px, 650, 26px, 0.40px);
+          text-transform: uppercase;
+        }
+
+        p {
+          @include text($textColorPAndBtn, 14px, 300, 24px, normal);
+        }
+
+        .btn {
+          text-decoration: none;
+          border: 1px solid $textColorPAndBtn;
+          outline: 0;
+          -webkit-transition: .25s;
+          -o-transition: .25s;
+          transition: .25s;
+          text-transform: uppercase;
+          padding: 8px 12px;
+          cursor: pointer;
+          //margin: 20px;
+          @include text($textColorPAndBtn, 14px, 600, 3, normal);
+
+          &:hover {
+            background-color: #252527;
+            border-color: #252527;
+          }
+        }
+      }
+    }
+  }
+}
+
+.project:nth-child(4n+1) .img, .project:nth-child(4n) .img {
+  height: 350px;
+}

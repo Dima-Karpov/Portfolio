@@ -1,0 +1,9 @@
+@import '../../../common/styles/sass/variables.scss';
+
+.burgerBtn {
+  cursor: pointer;
+  margin-left: 15px;
+  position: relative;
+  font-size: 14px;
+  color: $textColorH5;
+}
