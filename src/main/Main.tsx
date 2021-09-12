@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import s from './Main.module.scss';
+import photo from '../assets/image/photo.jpg'
 
 export const Main: React.FC = React.memo(() => {
     return (
@@ -16,7 +17,7 @@ export const Main: React.FC = React.memo(() => {
                 </div>
             </div>
             <div className={s.photo}>
-                <img src={'https://oir.mobi/uploads/posts/2021-03/thumbs/1616700535_22-p-samurai-krasivo-25.jpg'} alt={'It\'s me'} />
+                <img src={photo} alt={'It\'s me'} />
 
             </div>
         </div>
