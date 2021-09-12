@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "private": true,
   "homepage": "https://Dima-Karpov.github.io/Portfolio",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
