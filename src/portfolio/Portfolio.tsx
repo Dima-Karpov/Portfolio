@@ -29,10 +29,10 @@ export const Portfolio = React.memo(() => {
         },
         {
             id: 4,
-            title: 'future project',
+            title: 'Portfolio',
             img: 'https://c1.wallpaperflare.com/preview/253/14/507/596ecfc696d13.jpg',
-            description: '...in progress',
-            link: 'link #1',
+            description: 'TS, React, Axios',
+            link: 'https://Dima-Karpov.github.io/Portfolio',
         },
         {
             id: 5,
