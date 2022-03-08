@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Title } from '../common/components/title/Title';
+import React, {useState} from 'react';
+import {Title} from '../common/components/title/Title';
 import s from './ContactMe.module.scss';
-import { FormikErrors, useFormik } from 'formik';
+import {FormikErrors, useFormik} from 'formik';
 import axios from 'axios';
 
 type TFormikErrors = {
@@ -49,9 +49,9 @@ export const ContactMe = React.memo(() => {
         validate,
         onSubmit: values => {
             setBtnDisable(true)
-            const { name, email, message } = values
+            const {name, email, message} = values
 
-            axios.post('https://smtp-email-folio.herokuapp.com/send-message', { name, email, message })
+            axios.post('https://smtp-email-folio.herokuapp.com/send-message', {name, email, message})
                 .then(() => {
                     setBtnDisable(false)
                     formik.resetForm()
@@ -62,20 +62,27 @@ export const ContactMe = React.memo(() => {
     return (
         <div className={s.contactsBlock} id='contactMe'>
             <div className={s.contactsContainer}>
-                <Title text={'Contact me'} />
+                <Title text={'Contact me'}/>
                 <form>
                     <div className={s.inputBlock}>
-                        <input type='text' placeholder={'Your name'} {...formik.getFieldProps('name')} />
-                        {formik.touched.name && formik.errors.name ?
-                            <span className={s.errorField}>{formik.errors.name}</span> : null}
-                        <input type='text' placeholder={'Your email'} {...formik.getFieldProps('email')} />
-                        {formik.touched.email && formik.errors.email ?
-                            <span className={s.errorField}>{formik.errors.email}</span> : null}
+                        <div className={s.inputWrap}>
+                            <input type='text' placeholder={'Your name'} {...formik.getFieldProps('name')} />
+                            {formik.touched.name && formik.errors.name ?
+                                <span className={s.errorField}>{formik.errors.name}</span> : null}
+                        </div>
+                        <div className={s.inputWrap}>
+                            <input type='text' placeholder={'Your email'} {...formik.getFieldProps('email')} />
+                            {formik.touched.email && formik.errors.email ?
+                                <span className={s.errorField}>{formik.errors.email}</span> : null}
+                        </div>
                     </div>
-                    <textarea placeholder={'Your message'} {...formik.getFieldProps('message')} />
-                    {formik.touched.message && formik.errors.message ?
-                        <span className={s.errorField}>{formik.errors.message}</span> : null}
-                    <button className={s.btn} type={'submit'} disabled={btnDisable}>Contact me</button>
+                    <div className={s.inputWrap}>
+                        <textarea placeholder={'Your message'} {...formik.getFieldProps('message')} />
+                        {formik.touched.message && formik.errors.message ?
+                            <span className={s.errorField}>{formik.errors.message}</span> : null}
+                    </div>
+                        <button className={s.btn} type={'submit'} disabled={btnDisable}>Contact me</button>
+
                 </form>
 
             </div>
