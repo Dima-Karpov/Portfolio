@@ -8,7 +8,7 @@
   @include container();
   justify-content: space-around;
   flex-direction: row;
-  width: 100%;
+  max-width: none;
 
   .rights {
     @include text($textColorFooter, 13px, 400, 19px, normal);

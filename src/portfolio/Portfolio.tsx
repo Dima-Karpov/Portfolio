@@ -39,7 +39,7 @@ export const Portfolio = React.memo(() => {
             title: 'Short links',
             img: 'https://c1.wallpaperflare.com/preview/253/14/507/596ecfc696d13.jpg',
             description: 'TS, React, Axios',
-            link: 'link #1',
+            link: 'https://Dima-Karpov.github.io/Short',
         },
         {
             id: 6,

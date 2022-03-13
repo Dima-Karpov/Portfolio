@@ -1,21 +1,28 @@
-@import './../common/styles/sass/variables';
-@import './../common/styles/sass/mixins';
-
+@import "./../common/styles/sass/variables";
+@import "./../common/styles/sass/mixins";
 
 .mainBlock {
-  padding: 0 40px;
+  // padding: 0 40px;
   min-height: 100vh;
+  background: $bgSecondary;
   @include flexable(space-between, center, row);
 
   .container {
     @include container();
+
+    .mainBlockFlex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   .block {
     width: 500px;
     text-align: left;
 
-    h5, span {
+    h5,
+    span {
       @include text($textColorH5, 16px, 700, 40px, 1px);
       margin: 0 0 15px;
       text-transform: uppercase;
@@ -30,9 +37,7 @@
   }
 
   .photo {
-    display: flex;
     width: 400px;
-    flex-direction: column;
 
     img {
       height: auto;

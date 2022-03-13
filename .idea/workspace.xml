@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16445d42-1b8d-4198-8091-f8ab2e5b318a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contactme/ContactMe.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/contactme/ContactMe.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contactme/ContactMe.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contactme/ContactMe.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/portfolio/Portfolio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/portfolio/Portfolio.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +25,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/works/meetins" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -86,11 +82,25 @@
       <option name="presentableId" value="Default" />
       <updated>1631442905659</updated>
       <workItem from="1631442914339" duration="23000" />
-      <workItem from="1646752609355" duration="1846000" />
+      <workItem from="1646752609355" duration="2161000" />
+      <workItem from="1646924534495" duration="29000" />
+      <workItem from="1646925874473" duration="103000" />
     </task>
+    <task id="LOCAL-00001" summary="new content">
+      <created>1646754684367</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646754684367</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new content" />
+    <option name="LAST_COMMIT_MESSAGE" value="new content" />
   </component>
 </project>

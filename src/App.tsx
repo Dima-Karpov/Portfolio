@@ -10,14 +10,14 @@ import { Footer } from './footer/Footer';
 
 export const App: React.FC = React.memo(() => {
   return (
-    <div className={s.app}>
+    <section className={s.app}>
       <Header />
-      <Main/>
-      <Skills/>
-      <Portfolio />
-      <ContactMe />
-      <Footer />
-    </div>
+        <Main />
+        <Skills />
+        <Portfolio />
+        <ContactMe />
+        <Footer />
+    </section>
   )
 })
 

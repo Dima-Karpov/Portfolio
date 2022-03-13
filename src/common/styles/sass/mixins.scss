@@ -1,17 +1,19 @@
-@import './variables';
+@import "./variables";
 
 @mixin container() {
-  height: 100%;
-  width: 80%;
+  // height: 100%;
+  // width: 1200px;
+  max-width: 1330px;
+  padding: 0 10px;
   margin: 0 auto;
-  flex-wrap: wrap;
-  @include flexable(space-between, center, 0)
+  // flex-wrap: wrap;
+  @include flexable(space-between, center, 0);
 }
 @mixin flexable($justifyContent, $alignItems, $flexDirection) {
   display: flex;
   justify-content: $justifyContent;
   align-items: $alignItems;
-  flex-direction: $flexDirection
+  flex-direction: $flexDirection;
 }
 @mixin text($color, $fontSize, $fontWeight, $lineHeight, $letterSpacing) {
   color: $color;
